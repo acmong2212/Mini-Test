@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<form>
+    <!--//Câu lệnh nhận giá trị từ ô input là: document.getElementById("id).value-->
+    <!--//Đây là code:-->
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="button" onclick="click()" value="result">
+    <h1 id="kq"></h1>
+</form>
+</body>
+<script>
+    function click() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        S = a * b
+        document.getElementById("kq").innerHTML = "Kết quả là: " + S
+    }
+</script>
+</html>

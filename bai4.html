@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<form>
+    <input type="text" id="a">
+    <button type="button" onclick="click()">Result</button>
+    <p id="kq"></p>
+    <input type="text" id="b">
+    <button type="button" onclick="click1()">Result</button>
+    <p id="kqq"></p>
+</form>
+</body>
+<script>
+    function click() {
+        let number1 = document.getElementById("a").value;
+        chuvi = number1 * 4
+        document.getElementById('kq').innerHTML = "Chu vi hình vuông là: " + chuvi
+    }
+    function click1() {
+        let number2 = document.getElementById("b").value;
+        dientich = number2 * number2
+        document.getElementById('kqq').innerHTML = "Diện tích hình vuông là: " + dientich
+    }
+</script>
+</html>
